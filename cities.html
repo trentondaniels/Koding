@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>City Search</title>
+    </head>
+    <body>
+        <h1>Utah Cities</h1>
+        <p>Enter City:</p>
+        <form>
+            <input type ="text" id="box" onkeyup="showHints(this.value)">
+        </form>
+        <p>Suggestions:</p>
+        <p id="sug"></p>
+<script>
+    var cities = ["Alpine",
+        "Altamont",
+        "Alton",
+        "Altonah"
+        ];
+    function showHints(str){
+        console.log("I'm Here");
+        var list = "<ul>";
+        for (i = 0; i < cities.length; i++){
+            if(cities[i].substring===0){
+                list+="<li> "+ cities[i] + "</li>";
+            }
+        }
+        list+="</ul>";
+        document.getElementById("sug").innerHTML = list;
+    }
+</script>
+    </body>
+</html>
