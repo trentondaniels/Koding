@@ -2,13 +2,22 @@
 <html>
     <head>
         <title>Random Video Generator</title>
+        <link href="stylesheet.css" rel="stylesheet">
     </head>
     <body>
+        <h1>Random Youtube Generator!!!</h1>
+        <h3>Waste your time more efficietly!</h3>
+        <p>We remove the all the tediousness of actually having to 
+            <br>semi-interesting filter through videos to find something
+            <br>that might be just enter your search term and we will
+            <br>give you one of the top videos for your search!
+        </p>
         <form>
             Search: <input type="text" id ="search-item">
             <input id="submit-search" type="submit" value="Submit">
         </form>
         <div id="yt-player">
+            <iframe id="hidden"></iframe>
         </div>
         
         <div id="results">
