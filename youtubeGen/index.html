@@ -2,27 +2,43 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Random Video Generator</title>
-        <link href="stylesheet.css" rel="stylesheet">
+        <title>Random Youtube Generator</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="stylesheet.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <h1>Random Youtube Generator!!!</h1>
+            <div class="navbar-wrapper">
+            <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+	        <div class="navbar-header">
+		        <a class="navbar-brand" rel="home" href="#">Random Youtube Generator</a>
+	        </div>
+	
+            <div class="collapse navbar-collapse">
+        		<div class="col-sm-3 col-md-5 pull-right">
+                    <div class="navbar-text">Generate a video</div>
+        		    <form class="navbar-form" role="search">
+        		        <div class="input-group">
+    			            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="search-item">
+    			            <div class="input-group-btn">
+    				            <button class="btn btn-default" type="submit" id="submit-search"><i class="glyphicon glyphicon-search"></i></button>
+    			            </div>
+    		            </div>
+    		        </form>
+    		    </div>
+    	   </div>
+        </div>
+        </div>
+        </div>
+        <div class="container" id="main">
+            <h1>Welcome to Random Youtube Generator!!!</h1>
             <h3>The perfect Youtube player for the indecisive!</h3>
-            <p>We remove the all the tediousness of actually having to 
+            <p>We remove all the tediousness of actually having to 
                 <br>decide which video to watch after you do a Youtube
                 <br>search! Just enter your search term and we will
                 <br>give you one of the top videos Youtube has to offer!
             </p>
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" id="search-item">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit" id="submit-search"><i class="glyphicon glyphicon-search"></i></button>
-                    </div>
-                </div>
-            </form>
+
             <div id="yt-player">
                 <iframe id="hidden"></iframe>
             </div>
@@ -36,7 +52,8 @@
 
     
     
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="app.js"></script>
     </body>
 </html>

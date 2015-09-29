@@ -20,9 +20,9 @@ $('#submit-search').click(function() {
                 var id = parsed_json.items[index].id.videoId;
                 var videoSource= "https://www.youtube.com/watch?v=" + id;
                 console.log(everything);
-                everything += "<li>Title: "+title +"</li>";
-                everything += "<li>Channel: "+channel +"</li>";
-                everything += "<li>Description: "+description +"</li>";
+                everything += "<li><strong>Title</strong>: "+title +"</li>";
+                everything += "<li><strong>Channel</strong>: "+channel +"</li>";
+                everything += "<li><strong>Description</strong>: "+description +"</li>";
                 everything += "</ul>";
                 console.log(everything);
                 $("#results").html(everything);

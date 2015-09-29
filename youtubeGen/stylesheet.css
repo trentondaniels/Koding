@@ -1,3 +1,8 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 iframe {
     height: 500px;
     width: 1000px;
@@ -5,4 +10,29 @@ iframe {
 
 #hidden {
     visibility: hidden;
+}
+
+#main{
+    background: #e4e4e4;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 18px;
+}
+
+li {
+    font-size: 18px;
+}
+
+#results {
+    text-align: left;
 }
