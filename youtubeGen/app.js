@@ -2,7 +2,7 @@ $('#submit-search').click(function() {
     var searchItem = $('#search-item').val();
     var everything = "<ul>";
     console.log(everything);
-    var myurl= "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key=AIzaSyCUdNPjVYJln_JIlm31tbAmdK24-XYNGsQ&q=";
+    var myurl= "https://www.googleapis.com/youtube/v3/search?part=snippet&safeSearch=strict&maxResults=25&key=AIzaSyCUdNPjVYJln_JIlm31tbAmdK24-XYNGsQ&q=";
     myurl += searchItem;
     //myurl += ".json";
     console.log(myurl);
