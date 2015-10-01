@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Family History</title>
+    </head>
+    <body ng-app="myApp" ng-controller="familyCtrl">
+    
+        <h2>My Family History</h2>
+        
+        <form ng-submit="familyAdd()">
+            <input type="text" ng-model="personInput" size="25" placeholder="Name">
+            <input type="text" ng-model="fatherInput" size="25" placeholder="Father">
+            <input type="text" ng-model="motherInput" size="25" placeholder="Mother">
+            <input type="submit" value="Submit">
+        </form>
+        
+        <br>
+        
+        <div ng-repeat="personItem in personItems">
+            <input type="checkbox" ng-model="personItem.done"> 
+            <span> {{ personItem.person }}: {{ personItem.father }}, {{ personItem.mother }}</span>
+        </div>
+        
+        <p><button ng-click="remove()">Remove marked</button></p>
+        
+        
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!--Modules-->
+    <script src= "js/app.js"></script>
+    
+    <!--Controllers-->
+    <script src = "js/controllers/MainController.js"></script>
+    
+    </body>
+</html>
