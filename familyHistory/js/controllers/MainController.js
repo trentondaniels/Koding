@@ -2,8 +2,8 @@ app.controller('familyCtrl', function($scope) {
     $scope.personItems = 
     [
         {
-            person: "Trenton Daniels",
-            father: "Christopher Daniels",
+            person: "Trenton Daniels: ",
+            father: "Christopher Daniels, ",
             mother: "Cleone Pearce",
             done: false
         }
@@ -13,8 +13,8 @@ app.controller('familyCtrl', function($scope) {
     $scope.familyAdd = function() {
         $scope.personItems.push(
             {
-                person: $scope.personInput,
-                father: $scope.fatherInput,
+                person: $scope.personInput + ": ",
+                father: $scope.fatherInput + ", ",
                 mother: $scope.motherInput,
                 done: false
                 

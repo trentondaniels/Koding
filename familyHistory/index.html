@@ -18,7 +18,10 @@
         
         <div ng-repeat="personItem in personItems">
             <input type="checkbox" ng-model="personItem.done"> 
-            <span> {{ personItem.person }}: {{ personItem.father }}, {{ personItem.mother }}</span>
+            <span ng-bind="personItem.person"></span>
+            <span ng-bind="personItem.father"></span> 
+            <span ng-bind="personItem.mother"></span>
+
         </div>
         
         <p><button ng-click="remove()">Remove marked</button></p>
