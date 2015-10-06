@@ -1,0 +1,11 @@
+
+    <h2>{{ value.title }}</h2> 
+    <div class="row" ng-repeat="item in value.items">
+        <div class="item col-md-9">
+            <h3 class='name' ng-bind='item.name'></h3>
+            <p class="description" ng-bind="item.description"></p>
+        </div>
+        <div class="price col-md-3">
+            <p class="price" ng-bind="value.item.price | currency"> </p>
+        </div>
+    </div>
