@@ -7,7 +7,7 @@ app.controller('familyCtrl', function($scope) {
             mother: "Cleone Pearce",
             done: false
         }
-    ]
+    ];
     
     
     $scope.familyAdd = function() {
